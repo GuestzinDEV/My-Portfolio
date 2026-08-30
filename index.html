@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guester_DEV Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <canvas id="aurora-canvas"></canvas>
+
+    <div class="hero-content">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Full-Stack  and Game Developer · Age 16</span>
+      </div>
+
+      <h1 class="hero-title">
+        Guester_DEV<br />
+        <span class="title-accent">portfolio</span>
+      </h1>
+
+      <p class="hero-desc">
+        Guester_DEV is a full-stack developer who creates websites, develops
+        projects using Arduino and ESP32, creates AI, and develops games on the
+        Roblox platform or using JavaScript to create your games on web. Guester is known for creating insane prototypes with Arduinos, websites, and 3D modeling. His favorite programming languages are Lua, JavaScript, and Python.
+      </p>
+
+      <div class="hero-tags">
+        <span class="tag">Web Development</span>
+        <span class="tag">Arduino / ESP32</span>
+        <span class="tag">Artificial Intelligence</span>
+        <span class="tag">Roblox / WEB Games</span>
+        <span class="tag">3D Modeling</span>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <div class="projects-wrapper">
+    <section class="projects" id="projects">
+      <div class="projects-header">
+        <span class="section-label">— Work</span>
+        <h2 class="section-title">Main Project's:</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- 1. Geometry AI -->
+        <a href="https://geometryaiweb.onrender.com"
+           target="_blank" rel="noopener"
+           class="project-card" data-aos>
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='images/img1.png') }}"
+                 alt="Geometry AI"
+                 onerror="this.parentElement.classList.add('no-img')" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <div>
+              <span class="card-cat">Artificial Intelligence</span>
+              <h3 class="card-title">Geometry AI</h3>
+            </div>
+            <div class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="7" y1="17" x2="17" y2="7"/>
+                <polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- 2. GTDuino 2.1 -->
+        <div class="project-card no-link" data-aos>
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='images/img2.png') }}"
+                 alt="GTDuino 2.1"
+                 onerror="this.parentElement.classList.add('no-img')" />
+            <div class="card-overlay"></div>
+            <span class="dev-badge">⚙ In development</span>
+          </div>
+          <div class="card-content">
+            <div>
+              <span class="card-cat">Arduino / Hardware</span>
+              <h3 class="card-title">GTDuino 2.1</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Synergy Team -->
+        <div class="project-card no-link" data-aos>
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='images/img3.png') }}"
+                 alt="Synergy Team"
+                 onerror="this.parentElement.classList.add('no-img')" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <div>
+              <span class="card-cat">Leadership</span>
+              <h3 class="card-title">Founder of Synergy Team</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Retroless Battle -->
+        <a href="https://www.roblox.com/games/99247810260298/Retroless-Battle"
+           target="_blank" rel="noopener"
+           class="project-card" data-aos>
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='images/img4.png') }}"
+                 alt="Retroless Battle"
+                 onerror="this.parentElement.classList.add('no-img')" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <div>
+              <span class="card-cat">Roblox Game</span>
+              <h3 class="card-title">Retroless Battle</h3>
+            </div>
+            <div class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="7" y1="17" x2="17" y2="7"/>
+                <polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- 5. Easy Access Games Web -->
+     <div class="project-card no-link" data-aos>
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='images/img5.png') }}"
+                 alt="Easy Access Games Web"
+                 onerror="this.parentElement.classList.add('no-img')" />
+            <div class="card-overlay"></div>
+            <span class="dev-badge">⚙ In development</span>
+          </div>
+          <div class="card-content">
+            <div>
+              <span class="card-cat">Web Plataform</span>
+              <h3 class="card-title">Easy Access Games Web</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Coming Soon -->
+        <div class="project-card coming-soon" data-aos>
+          <div class="coming-soon-inner">
+            <div class="coming-soon-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="card-title">More projects coming soon!</h3>
+            <p class="coming-text">Stay tuned for what's next.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== WATER FOOTER ===================== -->
+  <footer class="water-footer">
+    <canvas id="water-canvas"></canvas>
+    <div class="footer-content">
+      <p class="footer-sig">Guester_DEV</p>
+      <p class="footer-text">© 2025 · Full-Stack Developer · Made with ♥</p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/aurora.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/water.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+tml>
+r>
+
+  <script src="{{ url_for('static', filename='js/aurora.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/water.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+>
+</body>
+</html>
+or('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+>
+</body>
+</html>
